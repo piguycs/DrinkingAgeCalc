@@ -8,10 +8,10 @@ public interface Country
     foreach (Country country in CountryList)
     {
       Console.WriteLine($"Country: {country.GetName()}");
-      country.CheckLegality(age);
+      country.CheckpublicLegality(age);
     }
   }
 
   protected String GetName();
-  protected void CheckLegality(uint age);
+  protected void CheckpublicLegality(uint age);
 }
